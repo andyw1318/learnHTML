@@ -1,0 +1,43 @@
+/* 
+    Css Rule: 
+    Selectors 
+    Declaration Block are the things inside the curly braces (body)
+    declaration is the property[color] and value[orange]
+*/
+
+/* Typically you don't want to change the whole thing but this is how you would */
+body{
+ color:purple;
+}
+h1, h2{
+ color:orange;
+ font-size: 3rem;
+}
+h3{
+ color:purple;
+}
+
+/* 
+ Using ids #idName 
+  This is mainly use for chaning a whole section
+*/
+
+#headings{
+ color:brown;
+ background: black;
+}
+#subheadings{
+ color:green;
+ background: pink;
+}
+
+/* 
+ Using classes .className 
+  This is mainly used for specific changes wanted
+*/
+.stupid {
+ background: powderblue;
+}
+.lowercase {
+ text-transform: lowercase;
+}

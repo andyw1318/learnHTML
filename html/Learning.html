@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+  <!-- #region Navigation--> 
+  <a href="/html/page1.html">Go back to Page 1</a>
+  <a href="/html/page2.html">Go back to Page 2</a>
+  <a href="/html/Learning.html">Go to Choices</a>
+  <a href="/html/css1.html">Learn CSS</a>
+  <!-- #endregion -->
+ <br>
+ <br>
+ <br>
+
+ <!-- Forms -->
+ <!-- 
+   Action is where the information will be sent 
+   Method is how the information will be processed (Ex: POSTED)
+  -->
+ <form action="" method=""> <!--For the purposes of just HTML and CSS the attributes will not be used-->
+  <!-- for is linked to id so that when clicked, it brings you to the location-->
+  <label for="name">First Name</label> 
+  <input type="text" name = "name" id="name"> <!-- name = whateverYouTyped-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- User and Password-->
+  <input type="email" name="" id="" placeholder="email address" value ="saved@email.com">
+  <br>
+  <input type="password" name="" id="" placeholder="password"> <!-- Name and id will also be useful for javascript-->
+<!-- #region--> Differnet Choices
+  <!-- Using "radio" choices Note: You can only choose one-->
+  <p> Which is your favorite Icecream</p>
+   <input type="radio" name="flavors" id="" value = "Vanilla"> Vanilla
+   <input type="radio" name="flavors" id="" value = "Chocolate"> Chocolate
+   <input type="radio" name="flavors" id="" value = "Strawberry"> Strawberry
+  <br>
+
+  <!-- Using checkbox choices Note: You can choose multiple-->
+  <p> Which is your favorite Icecream</p>
+   <input type="checkbox" name="candy" id="" value = "Vanilla"> Vanilla
+   <input type="checkbox" name="candy" id="" value = "Chocolate"> Chocolate
+   <input type="checkbox" name="candy" id="" value = "Strawberry"> Strawberry
+  <br>
+
+  <!-- Using select choices Note: You can only choose one-->
+  <p> Which is your favorite Icecream</p>
+   <select name="snacks" id="">
+    <option name="snacks" value="Vanilla"> Vanilla </option>
+    <option name="snacks" value="Chocolate"> Chocolate </option>
+    <option name="snacks" value="Strawberry"> Strawberry </option>
+   </select>
+
+   <!-- 
+    For all of these chocie options, the name for each question is the same to each other but notice that it is different for each different place so that it can store the information into different areas which is probably what you want from gather information from users
+   -->
+  <br>
+<!-- #endregion -->
+  <br>
+  <input type="submit" value="Submit"> <!-- defaulted to a button that says Submit Query-->
+  <!-- <button type="submit"> submit </button> -->
+ </form>
+</body>
+</html>
