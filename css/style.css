@@ -1,28 +1,16 @@
-/* 
-    Css Rule: 
-    Selectors 
-    Declaration Block are the things inside the curly braces (body)
-    declaration is the property[color] and value[orange]
-*/
-
-/* Typically you don't want to change the whole thing but this is how you would */
-body{
- color:purple;
-}
-h1, h2{
- color:orange;
- font-size: 3rem;
-}
-h3{
- color:purple;
-}
-
-/*  This is the hierachy of selectors for CSS */
+/* #region This is the hierachy of selectors for CSS */
   /*
     Selectors are just using the html tag to have all of it 
   */
 p {
   color: blue;
+}
+body{
+ color:black;
+}
+h1, h2, h3{
+ color:orange;
+ font-size: 3rem;
 }
   /* 
     Using classes .className 
@@ -38,4 +26,112 @@ p {
 #idPurple {
   color: purple;
 }
-  
+/* #endregion */
+
+/* #region Here we will discuss the pseudo-selectors*/
+  /*
+    :hover
+    for when the mouse hovers over the 
+  */
+h2:hover {
+  color: pink;
+}
+  /* 
+    :first-child and :last-child and :nth-child(n)
+    for child parent relationships
+  */
+li:first-child {
+  color: red;
+}
+li:last-child {
+  color: orange;
+}
+li:nth-child(2){
+  color:slateblue;
+}
+  /*
+    :link and :visited
+    link is for when the link is unvisited
+    visited is when the link is visited 
+  */
+a:link {
+  color: black;
+}
+#google-link:visited {
+  color:tomato;
+}
+/* #endregion */
+
+/* #region advanced selectors */
+  /*
+    selector1 + selector2 
+    this is how to change the selector2 that is DIRECTLY under selector1
+  */
+h2 + p {
+  color: skyblue;
+}
+  /*
+    selector1 ~ selector2
+    this is how to change every selector2 with the same parent under selector1
+  */
+h3 ~ p {
+  color: red;
+}
+  /* 
+    selector1 selector2
+    this is how to change EVERY DESCENDENT selector2 of selector1
+  */
+ol li {
+  color: black;
+} 
+  /* 
+    selector1 > selector2
+    this is how to change EVERY CHILD selector2 of selector1
+  */
+ol > li {
+  color: blueviolet;
+}
+/* #endregion */
+
+/* #region attribute selectors */
+  /* 
+    This is the most basics of HTML attribute
+    <element1 attribute="value">
+    element[attribute="value"]
+  */
+img[src="../Images/pretty.jpg"] {
+  border: 10px solid red;
+}
+  /* 
+    using ^= helps find anything that starts with value
+  */
+img[src^="../Images"] {
+  border: 10px solid orange;
+}
+  /* 
+    using $= helps find anything that end with value
+  */
+img[src$=".jpg"] {
+  border: 10px solid black;
+}
+  /* 
+    using ^= helps find anything that contains value
+  */
+img[src*=".jpg"] {
+  border: 10px solid khaki;
+}
+  /* 
+    using ~= helps find things seperated by white spaces
+    commonly used in multiple classes
+  */
+h3[class~="class2"] {
+  background-color: seashell;
+}
+  /* 
+    using |= helps find anything with the value and anything with the value followed by a dash
+    h2[class |= subtitle] 
+    would affect: subtitle, subtitle-2111 , subtitle-3333
+    commonly used in bigger websites and such but idk the actual use of this attribute selector
+  */
+/* #endregion */
+
