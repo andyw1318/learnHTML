@@ -17,27 +17,25 @@ h3{
  color:purple;
 }
 
-/* 
- Using ids #idName 
-  This is mainly use for chaning a whole section
-*/
-
-#headings{
- color:brown;
- background: black;
+/*  This is the hierachy of selectors for CSS */
+  /*
+    Selectors are just using the html tag to have all of it 
+  */
+p {
+  color: blue;
 }
-#subheadings{
- color:green;
- background: pink;
+  /* 
+    Using classes .className 
+    This is mainly used for specific changes wanted
+  */
+.classRed {
+  color: red;
 }
-
-/* 
- Using classes .className 
-  This is mainly used for specific changes wanted
-*/
-.stupid {
- background: powderblue;
+  /* 
+  Using ids #idName 
+    This is mainly use for chaning a whole section
+  */
+#idPurple {
+  color: purple;
 }
-.lowercase {
- text-transform: lowercase;
-}
+  
