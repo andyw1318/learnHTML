@@ -1,39 +1,58 @@
-
-/*
- CSS Box Model
- Margin
-  Border
-   Padding
-    Content
-
-*/
-
-
-
-h1 {
- background: red;
- padding: 20px;
- margin: 20px;
- border: 10px solid black;
- border-radius: 20px;
- 
- /*
- border-style: solid;
- border-width: 10px;
- border-color: black;
- /*
- padding-top: 30px;
- padding-bottom: 60px;
- padding-left: 20px;
- padding-right: 50px;
- */
+/* used to make no borders and stuff so i could find test width and height */
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color:rgba(150, 255, 255, .5);
 }
 
-p{
- margin-top: -0px;
- background: orange;
- padding: 20px 20px 20px 20px;
- border: 10px solid yellow;
- display:inline-block;
- /* padding: 20px; same as top*/
+/* containers for our divs */
+.medium-container {
+    height: 800px;
+    width: 70%; 
 }
+
+.big-container {
+    height: 1080px;
+    width: 1903px; /* max width of my border with scroll on right (17px)*/
+}
+
+/* here we learn gradient and colors (name, rgb, and rgba) */
+#Lgradient {
+    /* linear gradients is written (to direction or degrees, followed by colors)  */
+    background: linear-gradient(to top, rgba(200, 200, 255, .5), steelblue, blue );
+}
+
+#Rgradient {
+    /* radial gradient is written (circle or ellipse, followed by colors w/ optional percent) */
+    background: radial-gradient(circle, rgba(200, 200, 255, .5) 10%, steelblue 60%, blue );
+}
+
+/* here we are shown using background image and color and how to fit the image */
+    /* 
+        background repeat is defaulted
+        contain keeps the length of images
+        cover will cover the entire space  
+    */
+#sinb {
+    background-color: red;
+    background-image: url(../Images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    
+}
+
+#sinb2 {
+    background-color: red;
+    background: url(../Images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+
+
+
+
+
+
