@@ -1,3 +1,16 @@
+/* #region styling my own stuff */
+h1[class=title]{
+  color:black;
+  font-size: 4rem;
+}
+
+.subtitle {
+  color:black;
+  font-size: 3.5rem;
+  text-align: center;
+}
+/* #endregion */
+
 /* #region This is the hierachy of selectors for CSS */
   /*
     Selectors are just using the html tag to have all of it 
@@ -8,7 +21,7 @@ p {
 body{
  color:black;
 }
-h1, h2, h3{
+h2, h3{
  color:orange;
  font-size: 3rem;
 }
@@ -124,7 +137,7 @@ img[src*=".jpg"] {
     using ~= helps find things seperated by white spaces
     commonly used in multiple classes
   */
-h3[class~="class2"] {
+h3[class~="class2"], h1[class~="class2"] {
   background-color: seashell;
 }
   /* 

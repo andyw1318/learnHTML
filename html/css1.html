@@ -26,6 +26,9 @@
  <a href="/learnHTML/html/css2.html">Learn CSS2</a>
  <!-- #endregion -->
  
+ <h1 class="title">Learning id/class/attribute selectors</h1>
+
+ <h1 class="subtitle"> id/class selectors </h1>
  <!-- #region id/class selectors-->
  <p> This is just using the p html tag </p>
  <p class="classRed"> This is using class </p>
@@ -33,7 +36,8 @@
  <p class="classRed" id="idPurple"> This is using class and id [id > class]</p>
  <p class="classRed" id="idPurple" style ="color:black"> This is using class, id, and inline styling</p>
  <!-- #endregion -->
- <br>
+ 
+ <h1 class="subtitle"> pseudo selectors </h1>
  <!-- #region using pseudo selectors-->
 
  <h2> This is a regular unordered list </h2>
@@ -51,6 +55,8 @@
  <a href="https://www.jackywu.com"> unvisited link </a>
  <!-- #endregion -->
 
+ <h1 class="subtitle"> advanced selectors </h1>
+ <!-- #region using advanced selector -->
  <h2> This is to test out h2 + p</h2>
  <p> This is the paragraph directly under h2 which is why it is affected by the + selector</p>
  <p> This paragraph is not directly under h2 and is under hte previous paragraph which is why this is unaffected by the + selector</p>
@@ -82,13 +88,18 @@
    <li>number5</li>
   </ol>
   <p>From previous settings, all first child, 2nd child and last child of li has a change to it which is why 1,2, and 5 are different colors. Number 3 and 4 are purple because of ol > li and bullet 3 and 4 are black because of ol li. This is only because ol li was written first in the css style sheet and ol > li was written after. Their priority seems to be the same so the placement does matter</p>
- 
+  <!-- #endregion -->
+  
+ <h1 class="subtitle class2"> attribute selectors </h1>
+ <!-- #region learning attribute selectors -->
+  <h3 class="class1 class2">Image of something 2</h3>
   <img src="../Images/image1.jpg" width="260" alt="image of sinb">
   <img src="../Images/pretty.jpg" width="260" alt="image of pretty">
   <!--src and alt are ATTRIBUTES-->\
   <br>
-  <h3 class="class1 class2">Image of something 2</h3>
   <img src="https://i.redd.it/ee5jn0cuewb61.jpg" width="260" alt="eunha">
   <!--Using Copy Image Location-->
+  <p>here i used images to show attribute selectors and how they would work</p>
+<!-- #endregion-->
 </body>
 </html>
