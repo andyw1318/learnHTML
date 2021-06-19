@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background-color:rgba(150, 255, 255, .5);
+}
+
+#sinb {
+  background-color: red;
+  background-image: url(../Images/image1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+/* #region Unit Sizes */
+
+p {
+  font-size: 1em;
+}
+
+.medium-container {
+  height: 800px; /* absolute units: px, pt, pc(12pt), cm, mm */
+  width: 70%; /* relative units: em, % */
+  /* there is also vw(view width) and vh(view height)*/
+}
+
+/* #endregion */
+
+
+/* #region Text Manipulation */
+  /*
+   text-decoration has 4 main features;
+   none, underline, line-through, overline
+  */
+.text-dec {
+  text-decoration: underline;
+}
+
+  /*
+   text-transform has 4 main features;
+   none, lowercase, uppercase, capitalize
+  */
+.text-trans {
+  text-transform: capitalize;
+}
+
+  /*
+   text-align has 3 main features:
+   left, center, right, justify
+  */
+.text-align {
+  text-align: center;
+}
+
+/* #endregion */
+
+
