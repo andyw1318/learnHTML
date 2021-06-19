@@ -19,13 +19,12 @@ p {
 }
 
 .medium-container {
-  height: 800px; /* absolute units: px, pt, pc(12pt), cm, mm */
+  height: 300px; /* absolute units: px, pt, pc(12pt), cm, mm */
   width: 70%; /* relative units: em, % */
   /* there is also vw(view width) and vh(view height)*/
 }
 
 /* #endregion */
-
 
 /* #region Text Manipulation */
   /*
@@ -50,6 +49,41 @@ p {
   */
 .text-align {
   text-align: center;
+}
+
+/* #endregion */
+
+/* #region Font Manipulation/Styles */
+
+body {
+  font-size: 1.15em; /* you want to use em for this because its relative */
+}
+  /*
+   Font weights are the bolding of the text
+   ranges from 0 to 800-900 max
+   looks like 0 is default
+  */
+.title {
+  font-weight: 100;
+}
+  /*
+   Font style is for italics and has 3 values
+   normal, italic, oblique(most italic)
+  */
+.italics {
+  font-style: italic; 
+}
+
+  /*
+   Font families [use fonts.google.com for more]
+   serif font - ends line [Times News Roman]
+   sans-serif - no line (most common) [Arial]
+   monospace - each character has same width [Coriar]
+
+   font-family: SpecificFont, default;
+  */
+body {
+  font-family: 'Staatliches', cursive;
 }
 
 /* #endregion */
