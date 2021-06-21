@@ -14,17 +14,19 @@ body {
 }
 
 #sinb2 {
+  width: 50%;
   background-color: darkblue;
   background-image: url(../Images/image1.jpg);
   background-repeat: no-repeat;
   background-size: contain; 
   border: 10px solid red;
   margin: 0px;
+  /* padding: 0px; */
 }
 
 .medium-container {
   height: 300px; /* absolute units: px, pt, pc(12pt), cm, mm */
-  width: 70vw; /* relative units: em, % */
+  width: 70%; /* relative units: em, % */
   /* there is also vw(view width) and vh(view height)*/
 }
 
@@ -49,8 +51,45 @@ body {
  padding/margin: top/mid, left/right
 */
 #sinbz {
-  display: block;
+  display: block; 
   margin: 0px;
   border: 10px solid pink;
   padding: 10px 20px 40px 80px;
+  width: 50%;
 }
+
+/* #region float and display */
+  /* 
+    Float:
+      left
+      right
+      inherit - takes parent's float 
+      none - default
+
+    Display: 
+      none - used for javascript to make interactive
+      inline - elements don't move anything 
+      block - owns a certain amount of space and would move others and create new lines
+      inline-block - 
+  */
+
+
+.small-container {
+  display: block;
+  height: 300px;
+  width: 20%;
+  background: orange;
+  float:left; 
+}
+
+#sinb2 {
+  display: block;
+  float: left;
+}
+
+.parAfter {
+  /* display: inline-block;  */
+}
+
+
+/* #endregion */
