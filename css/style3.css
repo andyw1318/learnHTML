@@ -17,7 +17,9 @@ body {
 p {
   font-size: 1em;
 }
-
+/* 
+ Typically people uses pixels for height and relative unit for width
+*/
 .medium-container {
   height: 300px; /* absolute units: px, pt, pc(12pt), cm, mm */
   width: 70%; /* relative units: em, % */

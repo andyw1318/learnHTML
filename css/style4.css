@@ -1,0 +1,56 @@
+/* #region screen stuff */
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background-color:rgba(13, 53, 53, 0.6);
+}
+
+#sinb {
+  background-color: darkblue;
+  background-image: url(../Images/image1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+#sinb2 {
+  background-color: darkblue;
+  background-image: url(../Images/image1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  border: 10px solid red;
+  margin: 0px;
+}
+
+.medium-container {
+  height: 300px; /* absolute units: px, pt, pc(12pt), cm, mm */
+  width: 70vw; /* relative units: em, % */
+  /* there is also vw(view width) and vh(view height)*/
+}
+
+/* 
+ Box Layout for CSS
+ Margin
+ External space from outside content
+  Border
+  division line 
+   Padding (space between content and border)
+   gives more space around the content
+    Content
+    your content
+
+*/
+
+/* 
+ border: size style color; 
+ Border Styles: dotted solid dashed double 
+
+ padding/margin: top, right, bottom, left
+ padding/margin: top/mid, left/right
+*/
+#sinbz {
+  display: block;
+  margin: 0px;
+  border: 10px solid pink;
+  padding: 10px 20px 40px 80px;
+}
