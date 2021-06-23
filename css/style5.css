@@ -8,6 +8,7 @@ body {
 .container {
     background-color: rgba(255,255,255,1);
     margin: 10px;
+    height: 300px;
 
     display: flex;
     /* 
@@ -18,6 +19,34 @@ body {
             column-reverse
     */
     flex-direction: row;
+
+    /* 
+        flex-wrap: 
+            no-wrap - default, will change the size of the flex items inside to match the width 
+            wrap - helps contain the original flex items to it's size and pushes it down
+            wrap-reverse - wrap but the extras are pushed up 
+    */
+    flex-wrap: wrap-reverse;
+    /* 
+        Alignment
+        justift-content:
+            start - default left
+            end - right
+            center - center
+            space-between - space inbetween items (stretched out)
+            space-around - space around items (gives space from edges too) (centered)
+    */
+    justify-content: center;
+    /* 
+        Alignment
+        align-items
+            start - top
+            end - end
+            center - center
+            stretch - default (stretch top to bottom)
+            baseline - no matter the size, keeps it all on teh same baseline (invisible bottom line)
+    */
+    align-items: center;
 }
 
 .container-item {
