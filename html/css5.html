@@ -22,16 +22,74 @@
  <h1> Here we will learn CSS Flex Box and Containers (better divs) </h1>
 
  <div class="container">
-     <div class="container-item"> A </div>
-     <div class="container-item"> B </div>
-     <div class="container-item"> C </div>
-     <div class="container-item"> D </div>
-     <div class="container-item"> E </div>
-     <!-- <div class="container-item"> As </div>
-     <div class="container-item"> Bs </div>
-     <div class="container-item"> Cs </div>
-     <div class="container-item"> Ds </div>
-     <div class="container-item"> Es </div> -->
+     <!-- #region style="order: #;" -->
+     <!-- 
+         without order goes first, things with order then are orgainzed based off order number
+         useful for javascript and changing stuff around
+      -->
+     <div class="container-item" style="order: 5;" 
+     > A </div>
+     <div class="container-item" style="order: 4;"  
+     > B </div>
+     <div class="container-item" style="order: 2;"
+     > C </div>
+     <div class="container-item" style="order: 1;"
+     > D </div>
+     <div class="container-item" style="order: 3;"
+     > E </div>
+     <!-- #endregion -->
+     <!-- #region flex grow, shrink and basis
+        grow - grows X amount more if bigger than basis when stretched to take up the screen   
+            0 is default (don't expand)
+        shrink - shrinks X amount more if smaller than basis when stretched to take up the screen
+            0 is don't ever shrink
+            1 is default (shrinks at 1x speed)
+        basis - the size you want it
+
+        flex: grow shrink basis; <-- simplier way to put all values
+      -->
+     <div class="container-item" style="
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 100px;
+        
+        flex:0 1 100px ;
+        "
+     > As </div>
+     <div class="container-item" style="
+        flex-grow: 0;
+        flex-shrink: 3;
+        flex-basis: 100px;
+        
+        flex:0 3 100px ;
+        "
+     > Bs </div>
+     <div class="container-item" style="
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100px;
+        
+        flex:1 1 100px ;
+        "
+     > Cs </div>
+     <div class="container-item" style="
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 100px;
+        
+        flex:0 1 100px ;
+        "
+     > Ds </div>
+     <div class="container-item" style="
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100px;
+        
+        flex:0 0 100px ;
+        "
+     > Es </div> 
+     <!-- #endregion -->
+     
      <!-- <div class="container-item"> Af </div>
      <div class="container-item"> Bf </div>
      <div class="container-item"> Cf </div>

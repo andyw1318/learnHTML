@@ -5,6 +5,17 @@ body {
     background-color:rgba(13, 53, 53, 0.6);
   }
 
+.container-item {
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px 10px 10px 10px;
+} 
+
 .container {
     background-color: rgba(255,255,255,1);
     margin: 10px;
@@ -26,7 +37,7 @@ body {
             wrap - helps contain the original flex items to it's size and pushes it down
             wrap-reverse - wrap but the extras are pushed up 
     */
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap;  */
     /* 
         Alignment
         justift-content:
@@ -49,13 +60,4 @@ body {
     align-items: center;
 }
 
-.container-item {
-    background-color: green;
-    color: white;
-    font-size: 25px;
-    text-align: center;
 
-    width: 70px;
-    line-height: 50px;
-    margin: 10px 10px 10px 10px;
-} 
