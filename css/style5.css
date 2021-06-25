@@ -5,6 +5,11 @@ body {
     background-color:rgba(13, 53, 53, 0.6);
   }
 
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
 .container-item {
     background-color: green;
     color: white;
@@ -61,3 +66,27 @@ body {
 }
 
 
+.grid-container {
+    background-color: white;
+    margin: 10px;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: 100px 100px 300px;
+    grid-template-columns: auto 100px auto;
+    
+    grid-template-rows: 50px 250px;
+    grid-template-rows: auto auto;
+    
+}
+
+.grid-item {
+    color:black;
+    font-size: 20px;
+    text-align: center;
+
+    width: 70px;
+    /* height: 20px; */
+    line-height: 40px;
+    margin: 10px;
+}

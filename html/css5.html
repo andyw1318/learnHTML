@@ -21,6 +21,7 @@
  <!-- #endregion -->
  <h1> Here we will learn CSS Flex Box and Containers (better divs) </h1>
 
+ <h2> Flex Boxes </h2>
  <div class="container">
      <!-- #region style="order: #;" -->
      <!-- 
@@ -88,15 +89,58 @@
         flex:0 0 100px ;
         "
      > Es </div> 
-     <!-- #endregion -->
-     
-     <!-- <div class="container-item"> Af </div>
-     <div class="container-item"> Bf </div>
-     <div class="container-item"> Cf </div>
-     <div class="container-item"> Df </div>
-     <div class="container-item"> Ef </div> -->
  </div>
+     <!-- #endregion -->
+
+
+ <div class="container">
+    <!-- 
+        align-self:
+            flex-start
+            flex-end
+            flex-center
+     -->
+     <div class="container-item" style="
+     flex: 1 1 100px;
+     align-self: flex-start;
+     "> Bf </div>
+     <div class="container-item" style="
+     flex: 1 1 100px;
+     align-self: center;
+     "> Cf </div>
+     <div class="container-item" style="
+     flex: 1 1 100px;
+     align-self: flex-end;
+     "> Df </div>
+     <div class="container-item" style="
+     flex: 1 1 100px;
+     align-self: center;
+     "> Af </div>
+     <div class="container-item" style="
+     flex: 1 1 100px;
+     align-self: flex-start;
+     "> Ef </div> 
+ </div>
+
+ <h2> Grids </h2>
  
+ <div class="grid-container">
+    <div class="grid-item" style="
+    background-color: rgb(218, 255, 150);
+    "> 1 </div>
+    <div class="grid-item" style="
+    background-color: rgb(150, 255, 229);
+    "> 2 </div>
+    <div class="grid-item" style="
+    background-color: rgb(150, 204, 255);
+    "> 3 </div>
+    <div class="grid-item" style="
+    background-color: rgb(255, 150, 237);
+    "> 4 </div>
+    <div class="grid-item" style="
+    background-color: rgb(255, 150, 176);
+    "> 5 </div>
+ </div>
 
 </body>
 
