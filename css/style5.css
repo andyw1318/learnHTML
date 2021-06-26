@@ -72,12 +72,37 @@ h2 {
     height: 300px;
 
     display: grid;
+
+    /* 
+        grid-template-columns and rows
+            choose how many columns/rows you want and just put the size that you want it
+                auto- will give u even size for all autos (makes up for the space already taken)
+            any excessive items will be made to auto size
+    */
     grid-template-columns: 100px 100px 300px;
     grid-template-columns: auto 100px auto;
     
     grid-template-rows: 50px 250px;
     grid-template-rows: auto auto;
-    
+    /* 
+        justify-content
+            start, center, end
+            safe(default) - gives equal space for autos and give the set value obj their own space (based off their margin)
+            space-between - gives spaces only inbetween obj
+                a<-->b<-->c
+            space-evenly - from the ends to the next object
+                <->a<->b<->c<->
+            space-around - gives the same space surrounding object (increasing margin basically)
+                <->a<-><->b<-><->c<->
+    */
+    justify-content:space-between;
+    /* 
+        align-content
+            front, center, end
+            stretch- (defaulted) to stretching from top to bottom
+            space-between, space-around, space-evenly same as justifies
+    */
+    /* align-content: space-between; */
 }
 
 .grid-item {
