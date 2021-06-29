@@ -23,6 +23,7 @@ h2 {
 
 .container {
     background-color: rgba(255,255,255,1);
+    background-color: rgba(4, 31, 31, 0.6);
     margin: 10px;
     height: 300px;
 
@@ -67,7 +68,7 @@ h2 {
 
 
 .grid-container {
-    background-color: white;
+    background-color: rgba(4, 31, 31, 0.6);
     margin: 10px;
     height: 300px;
 
@@ -80,14 +81,16 @@ h2 {
             any excessive items will be made to auto size
     */
     grid-template-columns: 100px 100px 300px;
-    grid-template-columns: auto 100px auto;
+    grid-template-columns: auto auto auto;
+    /* grid-column-gap: 300px; */
     
     grid-template-rows: 50px 250px;
     grid-template-rows: auto auto;
+    /* grid-row-gap: 20px; */
     /* 
         justify-content
             start, center, end
-            safe(default) - gives equal space for autos and give the set value obj their own space (based off their margin)
+            unset(default) - gives equal space for autos and give the set value obj their own space (based off their margin)
             space-between - gives spaces only inbetween obj
                 a<-->b<-->c
             space-evenly - from the ends to the next object
@@ -102,7 +105,12 @@ h2 {
             stretch- (defaulted) to stretching from top to bottom
             space-between, space-around, space-evenly same as justifies
     */
-    /* align-content: space-between; */
+    align-content: space-evenly;
+}
+
+#nextItem {
+    justify-content: unset;
+    align-content: unset;
 }
 
 .grid-item {
