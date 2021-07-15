@@ -3,37 +3,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order Test Page</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+
     <link rel="stylesheet" href="../css/order.css">   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id="nav-bar">
-        <div id="logo">
-            
-        </div>
-        
-        <div id="nav-content">
-            <!-- dropdown text -->
-            <div id ="profile">
-                <a href="#"> Profile </a>
+    <!-- Making an interactive Nav-bar -->
+    <div class="nav-bar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#"> Home Page </a>
             </div>
-            <!-- dropdown shopping cart -->
-            <div id ="cart">
-                <p> cart </p>
+            <!-- shortcut ul.menu>li*6>a -->
+            <ul class="menu">
+                <li><a href="#"> Gallery </a></li>
+                <li><a href="#"> Certificates </a></li>
+                <li><a href="#"> Order Online </a></li>
+                <li><a href="#"> Profile </a></li>
+                <li><a href="#"> Contact Us</a></li>
+                <!-- <li><a href="#"> Cart </a></li> -->
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>
             </div>
         </div>
     </div>
-    
-    <!-- #region Navigation-->
-    <a href="../html/css1.html">Learn CSS</a>
-    <a href="../html/css2.html">Learn CSS2</a>
-    <a href="../html/css3.html"> Learn CSS3</a>
-    <a href="../html/css4.html"> Learn CSS4</a>
-    <a href="../html/css5.html"> Learn CSS5</a>
-    <a href="../html/Order.html"> Order Page</a>
-    <!-- #endregion -->
-    
 
+    <div class="empty">
+
+    </div>
+
+    <script src="../js/order.js"></script>
 </body>
 </html>
