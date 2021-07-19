@@ -9,11 +9,16 @@
 
 /*  */
 .max-width {
-    max-width: 1300px;
-    padding: 0 80px;
+    /* max-width: 1300px; */
+    max-width: 100%;
+    padding: 0 30px;
     margin: auto;
 }
 
+h2 {
+    margin: 10px auto;
+    font-size: 40px;
+}
 /* <temp> used to make a longer page */
 .empty{
     width: 100%;
@@ -89,19 +94,64 @@
     display: none;
 }
 
+.home{
+    display: flex;
+    height: 50vh;
+    background-color: pink;
+}
+
+/* new place */
+
+.order-food {
+    /* position: fixed; */
+    width: 100%;
+    height: 4000px;
+    /* padding: 30px 0; */
+    background-color: orange;
+    font-family: sans-serif;
+}
+
+.order-food .max-width{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.order-food .table-of-content{
+    width: 25%;
+    height: 100%;
+    background-color: violet;
+}
+
+.order-food .content {
+    width: 75%;
+}
+
+.order-food .toc-items li {
+    list-style: none;
+    display: block;
+}
+
+
+
 /* responsive media query */
 /* as screen gets smaller, lower padding */
 @media (max-width: 990px){
     .max-width {
-        padding: 0 50px;
+        padding: 0 20px;
     }
 }
 
 /* as screen gets very small, give dropdown */
-@media (max-width: 947px){
+@media (max-width: 800px){
     .menu-btn{
         display: block;
         z-index: 999;
+        padding-right: 20px;
     }
 
     .nav-bar i.active:before{
