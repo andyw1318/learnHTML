@@ -122,6 +122,7 @@ h2 {
 }
 
 .order-food .table-of-content{
+    display: none;
     width: 25%;
     height: 100%;
     background-color: violet;
@@ -129,6 +130,8 @@ h2 {
 
 .order-food .content {
     width: 75%;
+    margin: 0 auto;
+    background: green;
 }
 
 .order-food .toc-items li {
@@ -136,10 +139,40 @@ h2 {
     display: block;
 }
 
+.order-food .vege-content .content-hold{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.order-food .vege-content .content-cont h3{
+    font-size: 25px;
+}
+
+.order-food .vege-content .content-cont p{
+    font-size: 15px;
+}
+
+.content-cont {
+    margin: 10px auto;
+    padding: 10px 5px 10px 5px;
+    border: 3px black solid;
+    text-align: left;
+    width: 45%;
+}
 
 /* responsive media query */
 /* as screen gets smaller, lower padding */
+@media (max-width: 1020px){
+    .order-food .content {
+        width: 90%;
+        margin: 0 auto;
+        background: green;
+    }
+}
+
 @media (max-width: 990px){
     .max-width {
         padding: 0 20px;
@@ -183,5 +216,15 @@ h2 {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+}
+
+@media (max-width: 825px){
+    .order-food .content {
+        width: 100%;
+    }
+
+    .content-cont {
+        width: 90%;
     }
 }
