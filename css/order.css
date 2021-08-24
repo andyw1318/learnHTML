@@ -6,7 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+body { 
+    min-width: 414px;
+}
 /*  */
 .max-width {
     /* max-width: 1300px; */
@@ -122,7 +124,7 @@ h2 {
 }
 
 .order-food .table-of-content{
-    display: none;
+    /* display: none; */
     width: 25%;
     height: 100%;
     background-color: violet;
@@ -170,12 +172,26 @@ h2 {
         width: 90%;
         margin: 0 auto;
         background: green;
+        transition: all 0.6s ease;
     }
 }
 
 @media (max-width: 990px){
     .max-width {
         padding: 0 20px;
+        transition: all 0.6s ease;
+    }
+}
+
+@media (max-width: 825px){
+    .order-food .content {
+        width: 100%;
+        transition: all 0.6s ease;
+    }
+
+    .content-cont {
+        width: 90%;
+        transition: all 0.6s ease;
     }
 }
 
@@ -219,12 +235,19 @@ h2 {
     }
 }
 
-@media (max-width: 825px){
+@media (max-width: 800px){
+    .order-food .table-of-content{
+        display: none;
+    }
     .order-food .content {
         width: 100%;
+        transition: all 0.6s ease;
     }
 
     .content-cont {
         width: 90%;
+        transition: all 0.6s ease;
     }
 }
+
+
